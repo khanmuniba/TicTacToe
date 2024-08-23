@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;  /* Changed padding to 0 to avoid layout issues */
+    box-sizing: border-box; /* Added this for better control of spacing */
+}
+
+body {
+    background-color: #4B2840;
+    text-align: center;
+    padding: 10px; /* Added padding to body instead of universal selector */
+}
+
+h1 {
+    color: #E8D6CB;
+    padding-bottom: 30px;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centering vertically as well */
+}
+
+.Game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centering game content */
+    flex-wrap: wrap; 
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(9, 9, 9, 0.6);
+    font-size: 8vmin;
+    color: #E15A97;
+    background-color: #E8D6CB;
+    cursor: pointer; /* Added cursor pointer to indicate clickable */
+}
+
+#reset-btn, #new-btn {
+    background-color: #E8D6CB;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.25rem;
+    color: #E15A97;
+    position: relative;
+    bottom: 20px;
+    margin-top: 20px; /* Added margin-top for better spacing */
+}
+
+#new-btn {
+    margin-left: 20px;
+}
+
+.message-container {
+    
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #E8D6CB;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(9, 9, 9, 0.6);
+}
+
+#msg {
+    color: #E15A97;
+    font-size: 8vmin;
+}
+
+.hide {
+    display: none;
+}
